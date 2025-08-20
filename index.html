@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admission Going On</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f9d423, #ff4e50);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 850px;
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0px 8px 25px rgba(0,0,0,0.3);
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(50px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    h1 {
+      text-align: center;
+      color: #222;
+      font-size: 32px;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    h2 {
+      text-align: center;
+      color: #ff1744;
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+
+    .highlight {
+      background: #e1bee7;
+      padding: 15px;
+      font-size: 20px;
+      border-radius: 10px;
+      margin: 15px 0;
+      text-align: center;
+      font-weight: 600;
+      color: #3e0a57;
+    }
+
+    .major, .minor {
+      background: #fff3cd;
+      padding: 15px;
+      border-radius: 10px;
+      margin: 15px 0;
+      font-size: 20px;
+      font-weight: 500;
+      box-shadow: inset 0px 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .extra {
+      background: #bbdefb;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 20px;
+      font-weight: 600;
+      color: #0d47a1;
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .sec {
+      text-align: center;
+      margin: 20px 0;
+      font-size: 24px;
+      font-weight: bold;
+      color: #d50000;
+      text-transform: uppercase;
+      animation: blink 1.5s infinite alternate;
+    }
+
+    @keyframes blink {
+      from {opacity: 1;}
+      to {opacity: 0.5;}
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: 600;
+      color: #444;
+    }
+
+    .teacher {
+      background: #ffeb99;
+      padding: 15px;
+      border-radius: 10px;
+      margin: 20px auto;
+      font-size: 18px;
+      text-align: center;
+      box-shadow: inset 0px 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .teacher a {
+      color: #d32f2f;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    button {
+      display: block;
+      margin: 25px auto;
+      padding: 12px 25px;
+      font-size: 20px;
+      border: none;
+      border-radius: 30px;
+      background: linear-gradient(135deg, #42e695, #3bb2b8);
+      color: white;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 6px 15px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Admission Going on...</h1>
+    <h2>বি.এ. প্রথম সেমিস্টার</h2>
+
+    <div class="highlight">
+      এখানে মাইনর এবং মেজর বিষয় পড়ানো হয়।
+    </div>
+
+    <div class="major">
+      <strong>মেজর বিষয়:</strong> ইতিহাস
+    </div>
+
+    <div class="minor">
+      <strong>মাইনর বিষয়:</strong> বাংলা, ইতিহাস, রাষ্ট্রবিজ্ঞান
+    </div>
+
+    <div class="extra">
+      এছাড়াও
+    </div>
+
+    <div class="sec">
+      SEC Paper - ইতিহাস পড়ানো হয়
+    </div>
+
+    <div class="footer">
+      ⭐ মেজর ও মাইনর ব্যাচে ভর্তি চলছে ⭐
+    </div>
+
+    <div class="teacher">
+      শিক্ষক - <strong>বর্ষণ কুণ্ডু</strong> (M.A., D.El.Ed)<br>
+      Contact: <a href="tel:8101440028">8101440028</a>
+    </div>
+
+    <button onclick="alert('📞 Call 8101440028 for Admission Details!')">
+      Apply Now
+    </button>
+  </div>
+</body>
+</html>
+
